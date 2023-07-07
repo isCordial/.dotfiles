@@ -1,3 +1,6 @@
+---------- Setup HARPOON ----------
+-- (grab other settings from docs, like rotate through files)
+
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 

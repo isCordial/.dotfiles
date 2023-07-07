@@ -1,4 +1,7 @@
 ----------------- Custom commands -------------------
+----------------- and their binds -------------------
+
+
 -- Create command to copy current working directory
 vim.api.nvim_create_user_command("Cppath", function()
     local path = vim.fn.expand("%:p")
