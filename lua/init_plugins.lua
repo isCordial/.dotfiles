@@ -25,7 +25,7 @@ return {
     ----- LSP -----
     -- I am delegating this to another file
     -- because there is so much to the config:
-    { import = 'init_lsp'},
+    -- See init.lua for alternate file.
 
 
 
