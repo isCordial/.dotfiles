@@ -8,10 +8,10 @@
 -- These MUST run before lazy.setup()
 -- <leader> has to be set prior to setup, or there will be issues
 
-require('before.keymaps.lua')
-require('before.setoptions.lua')
-require('before.commands.lua')
-require('before.functions.lua')
+require('before.keymaps')
+require('before.setoptions')
+require('before.commands')
+require('before.functions')
 
 ---------- Lazy.nvim setup ----------
 
