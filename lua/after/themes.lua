@@ -1,5 +1,7 @@
--- Set up theme (catppuccin) ----------------------------------------------
--- Currently loaded via lua/custom/plugins/init.lua
+---------- Theme Configs (only use one) ----------
+---------- (theme selection is below setups)
+
+----- Catppuccin -----
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
@@ -43,9 +45,8 @@ require("catppuccin").setup({
     },
 })
 
------------------------------
 
--- Setup rose pine theme
+----- Rose Pine -----
 require('rose-pine').setup({
 	--- @usage 'auto'|'main'|'moon'|'dawn'
 	variant = 'auto',

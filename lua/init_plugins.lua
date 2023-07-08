@@ -3,11 +3,35 @@
 
 return {
 ---------- Primeagen Things
-    'ThePrimeagen/harpoon', -- Quick-switcher; similar to vim marks
-    'nvim-treesitter/playground',
-    'mbbill/undotree',
+    {
+	'nvim-telescope/telescope.nvim', tag = '0.1.2', -- Telescope Fuzzy Finder
+	  dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+
+    {
+    -- Highlight, edit, and navigate code
+	'nvim-treesitter/nvim-treesitter', -- Treesitter
+	dependencies = {
+	  'nvim-treesitter/nvim-treesitter-textobjects', -- Treesitter Textobjects
+	},
+	build = ':TSUpdate',
+    },
+    'nvim-treesitter/playground', -- Treesitter Playground
+
+    'ThePrimeagen/harpoon', -- Harpoon Quick-switcher; similar to vim marks
+    'mbbill/undotree', -- Undotree
+    'tpope/vim-fugitive', -- Git Integration | Fugitive
+
+    ----- LSP -----
+    -- I am delegating this to another file
+    -- because there is so much to the config:
+    { import = 'init_lsp'},
+
+
+
 
 ---------- Misc Things
+
     -- Quality of Life
     {
         'windwp/nvim-autopairs', -- Automatically closes brackets, quotes, etc.
@@ -23,25 +47,4 @@ return {
     -- ai things
     'github/copilot.vim', -- GitHub Copilot
 
-    -- color & theme things (SET THESE UP ELSEWHERE)
-    'norcalli/nvim-colorizer.lua', -- Colorizes color-codes
-	{
-		"catppuccin/nvim", -- catppuccin theme
-		name = "catppuccin",
-		priority = 1000,
-		--[[ CONFIGURED IN INIT.LUA
-		config = function()
-			vim.cmd.colorscheme 'catppuccin'
-		end,
-		]]
-	},
-	{
-		"nyoom-engineering/oxocarbon.nvim"
-			-- Add in any other configuration; 
-		  --   event = foo, 
-		  --   config = bar
-		  --   end,
-	},
-	{
-		{ 'rose-pine/neovim', name = 'rose-pine' }
-	}
+}
