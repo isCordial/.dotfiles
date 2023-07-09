@@ -18,8 +18,19 @@ require('before.functions')
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
-require('plugins.lazy')
 
+local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system {
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
+    lazypath,
+  }
+end
+vim.opt.rtp:prepend(lazypath)
 
 -- Lazy setup. Add plugins to relevant files below
 require('lazy').setup({
@@ -44,7 +55,7 @@ require('plugins.harpoon') -- Primeagen Harpoon
 require('plugins.undotree') -- Undotree Toggle bind
 require('plugins.fugitive') -- <leader>gs command
 require('plugins.copilot') -- GitHub Copilot
-require('plugins.lsp') -- LSP Zero
+-- require('plugins.lsp') -- LSP Zero
 
 
 -- default configs

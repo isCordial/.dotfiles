@@ -9,7 +9,6 @@ lsp.ensure_installed({
   'tsserver',
   'eslint',
   'rust_analyzer',
-  'sumneko_lua',
 })
 
 -- ThePrimeagen completion bindings, etc.
