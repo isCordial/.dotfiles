@@ -3,25 +3,26 @@
 - .tmux.conf
 - ...anythign else
 
-## Directories
-### root directory
+## nvim things:
+### Directories
+#### root directory
 init.lua -> just a bunch of `require()` statements.
 
-### ./lua/plugins
+#### ./lua/plugins
 For imported plugins (`init_plugins.lua`) and their individual config files `<plugin-name>.lua`
 
-### ./lua/before
+#### ./lua/before
 For configurations needed to run prior to `lazy.setup()`
 - custom commands (w/ paired keymaps)
 - custom functions
 - set options
 - set keymaps
 
-### ./lua/after
+#### ./lua/after
 Remaining post-`lazy.setup()` configurations
 - ./lua/after/themes.lua
 
-## NOTE 1:
+### NOTE 1:
 Plugins in kickstart.nvim that are not included (yet).
 Through a process of elimination, I'll find out what I've taken for granted so far.
 
@@ -51,9 +52,9 @@ To include (maybe), but that I haven't (maybe) installed manually:
 - **treesitter** + dependencies (already manually installed)
     - nvim-treesitter-textobjects
 
-## NOTE 2:
+### NOTE 2:
 Find out what autoformat.lua and debug.lua from kickstart.nvim did.
 
-## NOTE 3:
+### NOTE 3:
 There are (seemingly) a lot of gems in the LSP config for kickstart.nvim. Because I know next to nothing about all of the specific functionality (and language servers in general), I'm going to wait till later to come back to that stuff.
 - What intrigues me the most is the "local servers" variable assignment.
