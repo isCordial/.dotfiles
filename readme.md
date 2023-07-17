@@ -1,5 +1,7 @@
-# regis.nvim
-My post-kickstart nvim config
+# regis .dotfiles
+- Post-kickstart nvim config
+- .tmux.conf
+- ...anythign else
 
 ## Directories
 ### root directory
