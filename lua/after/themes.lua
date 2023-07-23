@@ -119,3 +119,10 @@ vim.api.nvim_command('highlight CursorLineNr guifg=#ff1a75')
 -- COLORCOLUMN (I don't like it... yet)
 -- The `colorcolumn` option specifies a comma-separated list of column numbers or column ranges where a vertical line should be displayed. By setting it to `"80"`, a vertical line will be displayed at column 80. This is often used as a visual guide for adhering to coding style guidelines that require code lines to be within a certain width limit.
 -- vim.opt.colorcolumn = "80"
+
+-- transparent background options
+ColorMyPencils()
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NonText", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
