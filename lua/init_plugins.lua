@@ -31,7 +31,6 @@ return {
 
 
 ---------- Misc Things
-
     -- Quality of Life
     {
         'windwp/nvim-autopairs', -- Automatically closes brackets, quotes, etc.
@@ -45,6 +44,15 @@ return {
 	'christoomey/vim-tmux-navigator', -- Allows navigation of tmux panes inside nvim
 
     -- ai things
-    'github/copilot.vim', -- GitHub Copilot
+    --'github/copilot.vim', -- GitHub Copilot DEFAULT
+     -- GitHub Copilot LUA
 
+    {
+      "zbirenbaum/copilot.lua",
+      cmd = "Copilot",
+      event = "InsertEnter",
+      config = function()
+        require("copilot").setup({})
+      end,
+    }
 }

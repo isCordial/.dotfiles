@@ -39,6 +39,7 @@ require('lazy').setup({
   { import = 'init_plugins' },
   { import = 'init_lsp' },
   { import = 'init_themes' },
+  { import = 'plugins.obsidian'},
 }, {})
 
 
