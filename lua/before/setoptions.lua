@@ -24,7 +24,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 -- Keep a certain number of lines in the viewport on the top and bottom
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 23
 
 -- Controls the interval (in milliseconds) for triggering the "CursorHold" and "CursorHoldI" events. These events are triggered when the cursor is idle for a certain period of time. By default it is set to 4000 milliseconds (4 seconds). Setting it to 50 will reduce the idle time to 50 milliseconds, making the events trigger more quickly.
 vim.opt.updatetime = 50
