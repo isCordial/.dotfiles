@@ -6,10 +6,10 @@ local ui = require("harpoon.ui")
 local tmux = require("harpoon.tmux")
 
 -- add current file to harpoon --
-vim.keymap.set("n", "<leader>h", mark.add_file)
+vim.keymap.set("n", "<leader>h", mark.add_file, { desc = 'HARPOON Mark'})
 
 -- quick toggle harpoon's quick menu -- no conflicts
-vim.keymap.set("n", "<M-h>", ui.toggle_quick_menu)
+vim.keymap.set("n", "<M-h>", ui.toggle_quick_menu, { desc = 'HARPOON Quick Menu'})
 
 -- navigation (will these conflict with tmux-navigator? Probably)
 -- NOTE: in the video, he sets these to home row for dvorak (ctrl + h/t/n/s)
@@ -19,8 +19,8 @@ vim.keymap.set("n", "<M-h>", ui.toggle_quick_menu)
 -- vim.keymap.set("n", "<M-l>", function() ui.nav_file(4) end)
 
 -- cycle through harpoon marks
-vim.keymap.set("n", "<M-d>", function() ui.nav_next() end)
-vim.keymap.set("n", "<M-u>", function() ui.nav_prev() end)
+vim.keymap.set("n", "<M-d>", function() ui.nav_next() end, { desc = 'HARPOON Next Mark'})
+vim.keymap.set("n", "<M-u>", function() ui.nav_prev() end, { desc = 'HARPOON Prev Mark'})
 
 -- tmux terminal navigation
 

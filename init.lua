@@ -56,6 +56,7 @@ require('plugins.harpoon') -- Primeagen Harpoon
 require('plugins.undotree') -- Undotree Toggle bind
 require('plugins.fugitive') -- <leader>gs command
 require('plugins.copilot') -- GitHub Copilot
+require('plugins.telescope')
 -- require('plugins.lsp') -- LSP Zero
 
 

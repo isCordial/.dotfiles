@@ -21,6 +21,7 @@ return {
     'ThePrimeagen/harpoon', -- Harpoon Quick-switcher; similar to vim marks
     'mbbill/undotree', -- Undotree
     'tpope/vim-fugitive', -- Git Integration | Fugitive
+    'mg979/vim-visual-multi', -- Enhanced multi-line editing
 
     ----- LSP -----
     -- I am delegating this to another file
@@ -38,6 +39,20 @@ return {
         opts = {} -- this is equalent to setup({}) functions
     },
     'windwp/nvim-ts-autotag', -- Automatically closes HTML tags
+
+    { -- Popup display for what your keybinds do...
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+        opts = {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+        }
+    },
     'numToStr/Comment.nvim', -- gc(c) and gb(b) for commenting highlighted things
 
     -- tmux things

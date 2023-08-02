@@ -46,3 +46,8 @@ require('copilot').setup({
   copilot_node_command = 'node', -- Node.js version must be > 16.x
   server_opts_overrides = {},
 })
+
+-- remaps
+-- vim.keymap.set("n", "<leader>gc", vim.cmd.Copilot.enable, { desc = ":Copilot enable" }) -- <leader>gc meaning "github copilot enable"
+--
+-- vim.keymap.set("n", "<leader>gd", vim.cmd.Copilot.disable, { desc = ":Copilot disable" }) -- <leader>gd meaning "github copilot disable"

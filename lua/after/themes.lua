@@ -49,10 +49,10 @@ require("catppuccin").setup({
 ----- Rose Pine -----
 require('rose-pine').setup({
 	--- @usage 'auto'|'main'|'moon'|'dawn'
-	variant = 'auto',
+	variant = 'main',
 	--- @usage 'main'|'moon'|'dawn'
 	dark_variant = 'main',
-	bold_vert_split = false,
+	bold_vert_split = true,
 	dim_nc_background = false,
 	disable_background = false,
 	disable_float_background = false,
@@ -92,8 +92,12 @@ require('rose-pine').setup({
 		ColorColumn = { bg = 'rose' },
 
 		-- Blend colours against the "base" background
-		CursorLine = { bg = 'foam', blend = 10 },
-		StatusLine = { fg = 'love', bg = 'love', blend = 10 },
+		CursorLine = { bg = 'love', blend = 20 },
+		StatusLine = { fg = 'rose', bg = 'overlay', blend = 69 },
+
+		Search = { bg = 'gold'--, inherit = false
+        },
+
 	}
 })
 

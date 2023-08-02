@@ -1,6 +1,7 @@
 -- color & theme things (SET THESE UP ELSEWHERE)
 return {
 	'norcalli/nvim-colorizer.lua', -- Colorizes color-codes
+    'xiyaowong/transparent.nvim', -- Makes EVERYTHING transparent
 	{
 		"catppuccin/nvim", -- catppuccin theme
 		name = "catppuccin",
