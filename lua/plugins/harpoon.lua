@@ -13,6 +13,9 @@ vim.keymap.set("n", "<M-h>", ui.toggle_quick_menu, { desc = 'HARPOON Quick Menu'
 
 -- navigation (will these conflict with tmux-navigator? Probably)
 -- NOTE: in the video, he sets these to home row for dvorak (ctrl + h/t/n/s)
+-- SO... I have config'd them for alt + hjkl. I NEED TO CHANGE THEM TO HTSN
+-- FOR ENGRAMMER
+--
 -- vim.keymap.set("n", "<M-h>", function() ui.nav_file(1) end)
 -- vim.keymap.set("n", "<M-j>", function() ui.nav_file(2) end)
 -- vim.keymap.set("n", "<M-k>", function() ui.nav_file(3) end)

@@ -8,6 +8,9 @@ vim.g.maplocalleader = ' '
 --| ---- My Additions ---- |--
 vim.keymap.set("n", "<leader>qq", ":q<CR>", { desc = '[q]uit nvim' })
 
+-- expand error diagnostics
+vim.keymap.set("n", "<leader>d", ":lua vim.diagnostic.open_float()<CR>", { desc = 'open [d]iagnostics' })
+
 -- hacky remap for NETRW ctrl+l for vim-tmux-navigator
 vim.cmd([[
     augroup netrw_mapping

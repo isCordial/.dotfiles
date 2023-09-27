@@ -97,6 +97,8 @@ require('rose-pine').setup({
 
 		Search = { bg = 'gold'--, inherit = false
         },
+        -- Add Visual mode highlighting here
+        Visual = { bg = 'love', blend = 69 },
 
 	}
 })

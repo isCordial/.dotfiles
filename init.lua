@@ -7,7 +7,6 @@
 
 -- These MUST run before lazy.setup()
 -- <leader> has to be set prior to setup, or there will be issues
-
 require('before.keymaps')
 require('before.setoptions')
 require('before.commands')
