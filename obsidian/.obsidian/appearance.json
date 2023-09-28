@@ -1,0 +1,13 @@
+{
+  "accentColor": "#8a4ef9",
+  "cssTheme": "AnuPpuccin",
+  "theme": "obsidian",
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "supercharged-links-gen",
+    "custom-rainbow-colors",
+    "extended-colorschemes",
+    "floating-search-bar"
+  ],
+  "baseFontSize": 18
+}
