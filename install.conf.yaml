@@ -1,0 +1,39 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+# - create:
+#     - ~/.oh-my-zsh
+
+# - clean:
+#     $HOME:
+#       force: false
+#     $XDG_CONFIG_HOME:
+#       recursive: true
+#       force: false
+#     $ZSH:
+#       recursive: true
+#       force: false
+
+# Linux / MacOS
+- link:
+    # File symlinks
+    ~/.zshrc: zsh/.zshrc
+    ~/.tmux.conf: tmux/.tmux.conf
+
+    # Folder symlinks
+    ~/.config/nvim: nvim
+    ~/.oh-my-zsh: zsh/.oh-my-zsh # (just ohmyzsh, not zsh)
+
+# Linux Only
+- link:
+    ~/.config/ulauncher: ulauncher
+    if: '[ "$(uname -s)" = "Linux" ]'
+
+- link:
+    ~/.config/i3: i3
+    if: '[ "$(uname -s)" = "Linux" ]'
+
+# - shell:
+#   - [git submodule update --init --recursive, Installing submodules ]
