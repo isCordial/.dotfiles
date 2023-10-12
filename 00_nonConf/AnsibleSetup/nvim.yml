@@ -5,32 +5,30 @@
     tags:
     - nvim
 
-  - name: Installing build dependencies
-    tasks:
-      - name: apt installing dependencies for Debian Linux...
-        apt:
-          name:
-            - ninja-build
-            - gettext
-            - cmake
-            - unzip
-            - curl
-          state: present
-        when: ansible_os_family == "Debian"
-        tags:
-        - nvim
+  - name: apt installing dependencies for Debian Linux...
+    apt:
+      name:
+        - ninja-build
+        - gettext
+        - cmake
+        - unzip
+        - curl
+      state: present
+    when: ansible_os_family == "Debian"
+    tags:
+    - nvim
 
-      - name: brew installing dependencies for MacOs...
-        homebrew:
-          name:
-            - ninja
-            - cmake
-            - gettext
-            - curl
-          state: present
-        when: ansible_os_family == "Darwin"
-        tags:
-        - nvim
+  - name: brew installing dependencies for MacOs...
+    homebrew:
+      name:
+        - ninja
+        - cmake
+        - gettext
+        - curl
+      state: present
+    when: ansible_os_family == "Darwin"
+    tags:
+    - nvim
 
 
   # - name: Build Targets
