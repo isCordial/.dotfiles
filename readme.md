@@ -1,4 +1,4 @@
-# regis.nvim
+# nvim things
 My post-kickstart nvim config
 
 ## Directories
