@@ -5,6 +5,6 @@
     tags:
     - dotfiles
   - name: Checking out to from-scratch branch
-    bash: cd ~/.dotfiles && git checkout from-scratch
+    shell: cd ~/.dotfiles && git checkout from-scratch
     tags:
     - dotfiles

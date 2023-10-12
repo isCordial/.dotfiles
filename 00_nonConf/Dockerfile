@@ -26,6 +26,6 @@ RUN apt-get update && \
 # Set the working directory to the user's home directory
 # WORKDIR /home/tester
 
-COPY setupEnv.sh nvim.sh zsh.sh dotfiles.sh dotfiles-clone /
+COPY setupEnv.sh nvim.sh zsh.sh dotfiles.sh dotfiles-clone.sh /
 
 RUN chmod +x setupEnv.sh && chmod +x nvim.sh && chmod +x zsh.sh && chmod +x dotfiles.sh && chmod +x dotfiles-clone.sh
