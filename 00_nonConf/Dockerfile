@@ -9,7 +9,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/tester
 
 # Update the package list and install things
 RUN apt-get update && \
-    apt-get install -y git curl sudo vim && \
+    apt-get install -y git curl ansible sudo vim && \
     rm -rf /var/lib/apt/lists/*
 
 # Create a new user named "tester" and add them to the sudo group without a password prompt
@@ -28,4 +28,4 @@ RUN apt-get update && \
 
 COPY setupEnv.sh nvim.sh zsh.sh dotfiles.sh dotfiles-clone /
 
-RUN chmod +x setupEnv.sh && chmod +x nvim.sh && chmod +x zsh.sh && chmod +x dotfiles.sh && chmod +x dotfiles-clone
+RUN chmod +x setupEnv.sh && chmod +x nvim.sh && chmod +x zsh.sh && chmod +x dotfiles.sh && chmod +x dotfiles-clone.sh
