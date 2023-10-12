@@ -26,4 +26,6 @@ RUN apt-get update && \
 # Set the working directory to the user's home directory
 # WORKDIR /home/tester
 
-COPY *.yml /
+COPY *.yml setupEnv.sh nvim.sh /
+
+RUN chmod +x setupEnv.sh && chmod +x nvim.sh
