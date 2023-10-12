@@ -30,8 +30,9 @@
 - link:
     ~/.config/ulauncher: ulauncher
     if: '[ "$(uname -s)" = "Linux" ]'
+
 - link:
-    $I3: i3
+    ~/.config/ulauncher: i3
     if: '[ "$(uname -s)" = "Linux" ]'
 
 # - shell:
