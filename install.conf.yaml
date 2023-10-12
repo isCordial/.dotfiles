@@ -28,11 +28,11 @@
 
 # Linux Only
 - link:
-    ~/.config/ulauncher: ulauncher
     if: '[ "$(uname -s)" = "Linux" ]'
+    ~/.config/ulauncher: ulauncher
 
 - link:
-    ~/.config/ulauncher: i3
+    ~/.config/i3: i3
     if: '[ "$(uname -s)" = "Linux" ]'
 
 # - shell:
