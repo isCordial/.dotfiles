@@ -4,8 +4,8 @@ Goal: to reproduce my dev env on debian (native + WSL) and macos
 ## Todos
 - **v1 Outline**
     - [x] get ansible setup into its own repo
+        - https://github.com/isCordial/ansible
     - [ ] finish scaffolding ansible playbooks
-        - [](https://github.com/isCordial/ansible)
     - [ ] For Each: install packages + symlink dotfiles
         - [ ] nvim build + install
         - [ ] tmux
