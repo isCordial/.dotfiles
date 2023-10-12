@@ -3,7 +3,9 @@ Goal: to reproduce my dev env on debian (native + WSL) and macos
 
 ## Todos
 - **v1 Outline**
-    - [ ] finish scaffolding ansible playbooks and create repo
+    - [x] get ansible setup into its own repo
+    - [ ] finish scaffolding ansible playbooks
+        - [](https://github.com/isCordial/ansible)
     - [ ] For Each: install packages + symlink dotfiles
         - [ ] nvim build + install
         - [ ] tmux
@@ -16,8 +18,7 @@ Goal: to reproduce my dev env on debian (native + WSL) and macos
 - **Other**
     - [ ] find reliable solution for storing secured ssh keys
         - *clone repos via https then switch remote to ssh post-setup?*
-    - [ ] ansible-pull
-        - [ ] separate ansible playbook / setup process into its own repo
+    - [ ] ansible-pull nuances
 
 
 ## Run process (roughly)
@@ -35,6 +36,7 @@ Goal: to reproduce my dev env on debian (native + WSL) and macos
 ## Stretch goals
 - [ ] refine personal tmux-sessionizer / alternative
 - [ ] and other scripts
+
 ...
 ???
 ...
