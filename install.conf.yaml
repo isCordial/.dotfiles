@@ -28,8 +28,8 @@
 
 # Linux Only
 - link:
-    if: '[ "$(uname -s)" = "Linux" ]'
     ~/.config/ulauncher: ulauncher
+    if: '[ "$(uname -s)" = "Linux" ]'
 
 - link:
     ~/.config/i3: i3
