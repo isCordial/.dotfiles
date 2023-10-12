@@ -9,6 +9,7 @@
       - node
   tasks:
   - include: dotfiles.yml
+  - include: dotbot.yml
   - include: zsh.yml
   - include: node.yml
   - include: npm-installs.yml

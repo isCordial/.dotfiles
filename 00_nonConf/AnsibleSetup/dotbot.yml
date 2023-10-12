@@ -1,0 +1,4 @@
+  - name: Symbolically linking .dotfiles...
+    bash: cd ~/.dotfiles && ./install
+    tags:
+    - dotbot
