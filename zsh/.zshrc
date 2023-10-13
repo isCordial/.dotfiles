@@ -116,6 +116,9 @@ export NVIM="$XDG_CONFIG_HOME/nvim"
 export I3="$XDG_CONFIG_HOME/i3"
 export ULAUNCHER="$XDG_CONFIG_HOME/ulauncher"
 
+# npm
+export PATH="$HOME/.local/.npm-global/bin:$PATH"
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
