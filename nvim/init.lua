@@ -1,4 +1,6 @@
+--
 -- Post re-factor init.lua. Only require() statements will be here.
+--
 
 
 ---------- RE-FACTORED INIT ----------
@@ -54,7 +56,7 @@ require('plugins.treesitter') -- treesitter
 require('plugins.harpoon') -- Primeagen Harpoon
 require('plugins.undotree') -- Undotree Toggle bind
 require('plugins.fugitive') -- <leader>gs command
-require('plugins.copilot') -- GitHub Copilot
+--require('plugins.copilot') -- GitHub Copilot NOT CURR IN USE 
 require('plugins.telescope')
 -- require('plugins.lsp') -- LSP Zero
 

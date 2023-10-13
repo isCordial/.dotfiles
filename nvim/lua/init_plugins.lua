@@ -4,7 +4,7 @@
 return {
 ---------- Primeagen Things
     {
-	'nvim-telescope/telescope.nvim', tag = '0.1.2', -- Telescope Fuzzy Finder
+	'nvim-telescope/telescope.nvim', tag = '0.1.4', -- Telescope Fuzzy Finder
 	  dependencies = { 'nvim-lua/plenary.nvim' }
     },
 
@@ -62,12 +62,4 @@ return {
     --'github/copilot.vim', -- GitHub Copilot DEFAULT
      -- GitHub Copilot LUA
 
-    {
-      "zbirenbaum/copilot.lua",
-      cmd = "Copilot",
-      event = "InsertEnter",
-      config = function()
-        require("copilot").setup({})
-      end,
-    }
 }
