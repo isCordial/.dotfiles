@@ -104,17 +104,12 @@ source $ZSH/oh-my-zsh.sh
 [ -s "/home/t/.bun/_bun" ] && source "/home/t/.bun/_bun"
 
 # XDG Specification locs
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_STATE_HOME="$HOME/.local/state"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/.cache"
+# export XDG_DATA_HOME="$HOME/.local/share"
+# export XDG_STATE_HOME="$HOME/.local/state"
+# export XDG_CONFIG_HOME="$HOME/.config"
+# export XDG_CACHE_HOME="$HOME/.cache"
 
 # linked ENVs for simple, hassle-free dotbot installation
-export TMUX="$HOME"
-export ZSHRC="$HOME"
-export NVIM="$XDG_CONFIG_HOME/nvim"
-export I3="$XDG_CONFIG_HOME/i3"
-export ULAUNCHER="$XDG_CONFIG_HOME/ulauncher"
 
 # npm
 export PATH="$HOME/.local/.npm-global/bin:$PATH"
