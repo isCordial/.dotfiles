@@ -2,13 +2,14 @@
     link:
       relink: true
       create: true
+      force: true
 
 # - create:
 #     - ~/.oh-my-zsh
 
-# - clean:
-#     $HOME:
-#       force: false
+- clean:
+    $HOME:
+      force: false
 #     $XDG_CONFIG_HOME:
 #       recursive: true
 #       force: false
@@ -24,7 +25,7 @@
 
     # Folder symlinks
     ~/.config/nvim: ./nvim
-    ~/.oh-my-zsh: ./zsh/.oh-my-zsh # (just ohmyzsh, not zsh)
+    # ~/.oh-my-zsh: ./zsh/.oh-my-zsh # (just ohmyzsh, not zsh)
 
 # Linux Desktop Only
 # - link:
