@@ -19,12 +19,12 @@
 # Linux / MacOS
 - link:
     # File symlinks
-    ~/.zshrc: zsh/.zshrc
+    ~/zsh/.zshrc: zsh/.zshrc
     ~/.tmux.conf: tmux/.tmux.conf
 
     # Folder symlinks
     ~/.config/nvim: nvim
-    ~/.oh-my-zsh: zsh/.oh-my-zsh # (just ohmyzsh, not zsh)
+    ~/zsh/.oh-my-zsh: zsh/.oh-my-zsh # (just ohmyzsh, not zsh)
 
 # Linux Only
 - link:

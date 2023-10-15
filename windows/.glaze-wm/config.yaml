@@ -219,8 +219,10 @@ window_rules:
     match_process_name: "firefox"
 
   #----- WORKSPACE 12 (monitor 2) -----#
+  
+  # Steam
   - command: "move to workspace 12"
-    match_process_name: "steam"
+    match_process_name: "steamwebhelper"
 
 
 # Personally-defined "modes", with their own leader key;

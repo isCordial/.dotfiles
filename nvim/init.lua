@@ -65,3 +65,17 @@ require('plugins.telescope')
 require('Comment').setup() -- comment.nvim
 require('colorizer').setup() -- nvim-colorizer
 require('nvim-ts-autotag').setup() -- for nvim treesitter autotag
+
+-- WSL2 clipboard
+vim.g.clipboard = {
+  name = 'WslClipboard',
+  copy = {
+    ['+'] = 'clip.exe',
+    ['*'] = 'clip.exe',
+  },
+  paste = {
+    ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring():gsub("\\r", ""))',
+    ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring():gsub("\\r", ""))',
+  },
+  cache_enabled = 0,
+}
