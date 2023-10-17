@@ -114,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 # npm
 export PATH="$HOME/.local/.npm-global/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.dotfiles/scripts/bin:$PATH"
 
 # bun

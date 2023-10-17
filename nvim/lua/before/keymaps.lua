@@ -23,6 +23,9 @@ vim.cmd([[
     endfunction
 ]])
 
+-- tmux sessionizer 
+vim.keymap.set("n", "<leader>s", ":silent !tmux neww tmux-sessionizer<CR>", { desc = 'tmux-sessionizer' })
+
 -- toggle transparent mode
 vim.keymap.set("n", "<leader>tt", ":TransparentToggle<CR>", { desc = 'Toggle Transparent Mode' })
 
