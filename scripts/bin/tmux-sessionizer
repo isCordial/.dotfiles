@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+session=$(find ~ ~/repos/personal ~/repos/work -mindepth 1 -maxdepth 1 -type d | fzf)
+
+session_name=$(basename "$session" | tr . _)
+
+
+if ! tmux has-session -t "$session_name" 2> /dev/null; then # redirect any tmux stderror to /dev/null (michael scott's filing cabinet)
+    tmux new-session -As "$session_name" -c "$session" -d
+fi
+
+#!/usr/bin/env bash
+if [ -z "$TMUX" ]; then
+    tmux attach-session -t "$session_name"
+else
+    tmux switch-client -t "$session_name"
+fi
+
