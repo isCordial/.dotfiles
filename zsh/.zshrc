@@ -71,6 +71,7 @@ ZSH_THEME="af-magic"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+bindkey -s ^f "tmux-sessionizer\n"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 # npm
 export PATH="$HOME/.local/.npm-global/bin:$PATH"
+export PATH="$HOME/.dotfiles/scripts/bin:$PATH"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
