@@ -81,8 +81,8 @@ bar:
   components_right:
     # - type: "system tray"
     - type: "tiling direction"
-      label_horizontal: "⮂"
-      label_vertical: "⮁"
+      label_horizontal: "Γ«é"
+      label_vertical: "Γ«ü"
       background: "#ffffff33"
       margin: "0 4px"
       padding: "0 8px"
@@ -396,3 +396,4 @@ keybindings:
     bindings: ["Alt+Ctrl+Shift+2"]
   - commands: ["move to workspace 12", "focus workspace 12"]
     bindings: ["Alt+Ctrl+Shift+3"]
+
