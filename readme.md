@@ -17,11 +17,13 @@ Goal: to reproduce my dev env on debian (native + WSL) and macos
 
 - **Other**
     - [ ] ansible-pull nuances
+    - [ ] Scaffold windows install script
+    - [ ] Scaffold mac install script
 
 
 ## Run process (roughly)
 1. Bash install ansible
-    - ppa on docker?
+    - "~~ppa on docker?~~
 2. `ansible-pull` playbook repo
 3. `ansible-playbook local.yml` + args
     - *(order is wip)*
