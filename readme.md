@@ -2,7 +2,7 @@
 Goal: to reproduce my dev env on debian (native + WSL) and macos
 
 ## Todos
-- **v1 Outline**
+- **v1 Linux**
     - [x] get ansible setup into its own repo
         - https://github.com/isCordial/ansible
     - [x] finish scaffolding ansible playbooks
@@ -19,6 +19,22 @@ Goal: to reproduce my dev env on debian (native + WSL) and macos
     - [ ] ansible-pull nuances
     - [ ] Scaffold windows install script
     - [ ] Scaffold mac install script
+
+---
+
+- **Windows**
+    - [ ] symlinks + installs
+        - [ ] glazeWM cfg
+        - [ ] flow launcher
+        - [ ] powertoys
+    - [ ] WSL2 setup
+    - [ ] Misc. Software
+        - other install script? (ex. thisiswin11 / chris titus)
+        - [ ] OBS
+        - [ ] Browsers
+
+- **MacOS**
+    - [ ] brew VS apt ansible-playbooks
 
 
 ## Run process (roughly)
